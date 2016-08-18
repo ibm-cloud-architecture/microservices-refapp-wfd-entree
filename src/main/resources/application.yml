@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: entree-service
+
+server:
+  port: 8081
+
+eureka:
+  instance:
+     preferIpAddress: true
+  client:
+    serviceUrl:
+       defaultZone: http://localhost:8080/
+
+wfd:
+  entree:
+    order: 2
+    type: dinner
+    menu:
+      - Steak
+      - Chicken
+      - Fish
