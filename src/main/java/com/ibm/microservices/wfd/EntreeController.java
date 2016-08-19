@@ -11,6 +11,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.ibm.microservices.wfd.model.Entree;
+
 @RestController
 @EnableConfigurationProperties
 @ResponseBody
@@ -20,18 +22,12 @@ public class EntreeController {
     private EntreeConfiguration config;
 
     @RequestMapping("/menu")
-    public List<String> getMealMenu() {
-        return this.config.getMenu();
-    }
-
-    @RequestMapping("/type")
-    public String getMealType(){
-      return this.config.getType();
-    }
-
-    @RequestMapping("/order")
-    public int getMealOrder(){
-      return this.config.getOrder();
+    public Entree getMealMenu() {
+        Entree local = new Entree();
+        local.setMenu(this.config.getMenu());
+        local.setType(this.config.getType());
+        local.setOrder(this.config.getOrder());
+        return local;
     }
 
 }
