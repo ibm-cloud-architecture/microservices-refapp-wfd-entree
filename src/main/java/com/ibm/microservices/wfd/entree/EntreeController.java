@@ -1,4 +1,4 @@
-package com.ibm.microservices.wfd;
+package com.ibm.microservices.wfd.entree;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.ibm.microservices.wfd.model.Entree;
+import com.ibm.microservices.wfd.entree.model.Entree;
 
 @RestController
 @EnableConfigurationProperties

@@ -1,4 +1,4 @@
-package com.ibm.microservices.wfd.model;
+package com.ibm.microservices.wfd.entree.model;
 
 import java.util.List;
 import java.util.ArrayList;

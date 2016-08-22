@@ -1,4 +1,4 @@
-package com.ibm.microservices.wfd;
+package com.ibm.microservices.wfd.entree;
 
 /**
  *  Patterned after https://github.com/aykutakin/SpringConfigurationPropertiesSample
