@@ -1,4 +1,4 @@
-package com.ibm.microservices.wfd;
+package com.ibm.microservices.wfd.entree;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
