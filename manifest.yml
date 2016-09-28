@@ -1,0 +1,3 @@
+applications:
+- name: microservices-refapp-wfd-entree
+  memory: 256M
