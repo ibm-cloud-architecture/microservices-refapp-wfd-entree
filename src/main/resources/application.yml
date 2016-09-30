@@ -1,9 +1,6 @@
 spring:
   application:
     name: entree-service
-#  cloud:
-#    client:
-#      hostname: localhost
 
 server:
   port: 8081
