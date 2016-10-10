@@ -1,4 +1,4 @@
-###### microservices-refapp-wfd-entree
+###### refarch-cloudnative-wfd-entree
 
 ### Microservices Reference Application - What's For Dinner Entree Service
 
@@ -24,7 +24,7 @@ You can use cURL or Chrome POSTMAN to send get/post/put/delete requests to the a
 1. Clone git repository.
     ```
     git clone https://github.com/ibm-cloud-architecture/refarch-cloudnative-wfd-entree
-    cd microservices-refapp-wfd-entree
+    cd refarch-cloudnative-wfd-entree
     ```
 
 2. Build the application.  A utility script is provided to easily build using either Gradle (default) or Maven.  You can optionally specify the `-d` parameter to build the associated Docker image as well.
@@ -105,13 +105,13 @@ In this section you will deploy the Spring Boot application to run in a local Do
     ```
     cf push -p build/libs/wfd-entree-0.0.1-SNAPSHOT.jar -d mybluemix.net -n wfd-entree-{your-bluemix-user-id} --no-start
 
-    cf set-env microservices-refapp-wfd-entree SPRING_PROFILES_ACTIVE cloud
+    cf set-env wfd-entree SPRING_PROFILES_ACTIVE cloud
 
-    cf bind-service microservices-refapp-wfd-entree eureka-service-discovery
+    cf bind-service wfd-entree eureka-service-discovery
 
-    cf restage microservices-refapp-wfd-entree
+    cf restage wfd-entree
 
-    cf start microservices-refapp-wfd-entree
+    cf start wfd-entree
     ```
 
 6. Validate.  
