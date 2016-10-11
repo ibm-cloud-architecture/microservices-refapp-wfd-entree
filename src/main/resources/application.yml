@@ -3,7 +3,7 @@ spring:
     name: entree-service
 
 server:
-  port: 8081
+  port: ${vcap.application.port:8081}
 
 eureka:
   client:
