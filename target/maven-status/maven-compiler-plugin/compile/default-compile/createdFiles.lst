@@ -1,0 +1,4 @@
+application/rest/EntreeApplication.class
+application/rest/HealthEndpoint.class
+application/rest/Entree.class
+application/rest/EntreeResource.class
