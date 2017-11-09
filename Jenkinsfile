@@ -2,5 +2,5 @@
 
 @Library('MicroserviceBuilder') _
 microserviceBuilderPipeline {
-  image = 'refarchcloudnativewfdentree'
+  image = 'wfdentree'
 }
